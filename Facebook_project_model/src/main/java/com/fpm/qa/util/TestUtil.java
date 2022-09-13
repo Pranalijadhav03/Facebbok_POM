@@ -7,7 +7,12 @@ public class TestUtil extends TestBase {
 	public static long IMPLICIT_WAIT = 20;
 
 	public void switchToFrame() {
-		driver.switchTo().frame("Friends");
+		driver.switchTo().frame("//span[contains(text(), 'Pranali Jadhav')]");
+	}
+
+	public static void runTimeInfo(String string, String string2) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

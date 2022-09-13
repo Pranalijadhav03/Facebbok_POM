@@ -1,6 +1,7 @@
 package com.fpm.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -38,6 +39,12 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath = "//span[contains(text(),'Marketplace')]']")
 	WebElement Marketplace;
+	
+	@FindBy(xpath = "//span[contains(text(),'Pranali Jadhav')]")
+	WebElement profileLink;
+	
+	@FindBy(xpath = "//span[contains(text(),'Pranali Jadhav')]")
+	WebElement newprofileLink;
 	
 
 	// Initializing the Page Objects:
@@ -95,4 +102,10 @@ public class HomePage extends TestBase {
 	}
 
 	
+	public void clickOnNewProfiletLink(){
+		Actions action = new Actions(driver);
+		action.moveToElement(profileLink).build().perform();
+		newprofileLink.click();
+		
+	}
 }

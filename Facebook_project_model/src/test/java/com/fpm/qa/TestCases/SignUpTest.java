@@ -25,52 +25,52 @@ public class SignUpTest extends SignUpPage {
 	    @Test(priority = 1)
 	    public void verifyFirstNameOfSignUpPage(){
 	        String Name1 = verifyFirstNameField();
-	        Assert.assertEquals(Name1,"firstname");
+	        Assert.assertEquals(Name1,"Pranali");
 	    }
 	    @Test(priority = 2)
 	    public void verifyLastNameOfSignUpPage(){
 	        String Name2 = verifyLastNameField();
-	        Assert.assertEquals(Name2,"lastname");
+	        Assert.assertEquals(Name2,"Jadhav");
 	    }
 	    @Test(priority = 3)
 	    public void verifyEmailFieldOfSignUpPage(){
 	        String email = verifyEmailTextField();
-	        Assert.assertEquals(email,"reg_email__");
+	        Assert.assertEquals(email,"jadhav.pranali2403@gmail.com");
 	    }
 	    @Test(priority = 4)
 	    public void verifyConfirmEmailFieldOfSignUpPage(){
 	        String confEmail = verifyConfirmEmailTextField();
-	        Assert.assertEquals(confEmail,"reg_email_confirmation__");
+	        Assert.assertEquals(confEmail,"jadhav.pranali2403@gmail.com");
 	    }
 	    @Test(priority = 5)
 	    public void verifypassFieldOfSignUpPage(){
 	        String pass = verifyPasswordTextField();
-	        Assert.assertEquals(pass,"reg_passwd__");
+	        Assert.assertEquals(pass,"Pranalij@2403");
 	    }
 	    @Test(priority = 6)
 	    public void verifyBirthDayFieldOfSignUpPage(){
 	        String birth_Day = verifyBirthDayField();
-	        Assert.assertEquals(birth_Day,"birthday_day");
+	        Assert.assertEquals(birth_Day,"24");
 	    }
 	    @Test(priority = 7)
 	    public void verifyBirthMonthFieldOfSignUpPage(){
 	        String birth_Month = verifyBirthmonthField();
-	        Assert.assertEquals(birth_Month,"birthday_month");
+	        Assert.assertEquals(birth_Month,"Mar");
 	    }
 	    @Test(priority = 8)
 	    public void verifyBirthYearFieldOfSignUpPage(){
 	        String birth_Year = verifyBirthYearField();
-	        Assert.assertEquals(birth_Year,"birthday_year");
+	        Assert.assertEquals(birth_Year,"1997");
 	    }
 	    @Test(priority = 9)
 	    public void verifyGenderFieldOfSignUpPage(){
 	        String gender = verifyGenderField();
-	        Assert.assertEquals(gender,"sex");
+	        Assert.assertEquals(gender,"1");
 	    }
 	    @Test(priority = 10)
 	    public void verifySubmitbtnOfSignUpPage(){
-	        String subBtn = verifySignUpBtnField();
-	        Assert.assertEquals(subBtn,"websubmit");
+	    	boolean subBtn = verifySignUpBtnField();
+	        Assert.assertTrue(subBtn);
 	    }
 	
 	@AfterMethod

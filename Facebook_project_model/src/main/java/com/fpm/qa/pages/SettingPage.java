@@ -2,9 +2,10 @@ package com.fpm.qa.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.fpm.qa.BaseClass.BaseClass;
 import com.fpm.qa.base.TestBase;
 
-public class SettingPage extends TestBase{
+public class SettingPage extends BaseClass{
 	public static WebElement general;
     public static WebElement securityAndPrivacy;
     public static WebElement yourFacebookInfo;

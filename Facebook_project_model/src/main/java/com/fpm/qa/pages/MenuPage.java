@@ -1,11 +1,12 @@
 package com.fpm.qa.pages;
 
+import com.fpm.qa.BaseClass.BaseClass;
 import com.fpm.qa.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 
-public class MenuPage extends TestBase {
+public class MenuPage extends BaseClass {
 	public static WebElement fbLogo;
     public static WebElement welcome;
     public static WebElement event;

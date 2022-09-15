@@ -3,6 +3,7 @@ package com.fpm.qa.TestCases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fpm.qa.base.TestBase;
@@ -10,6 +11,7 @@ import com.fpm.qa.pages.HomePage;
 import com.fpm.qa.pages.LoginPage;
 import com.fpm.qa.pages.SignUpPage;
 
+@Listeners(com.fpm.qa.Extentreportlistener.TestNG_Listener.class)
 public class SignUpTest extends SignUpPage {
 	public SignUpTest(){
 		super();

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+        <listener class-name="com.fpm.qa.Extentreportlistener.ExtentReportNG" />
+        <listener class-name="com.fpm.qa.Extentreportlistener.TestNG_Listener"/>
+    </listeners>
+
+  <test thread-count="5" name="TestNG">
+  
+    <classes>
+      <class name="com.fpm.qa.TestCases.LoginPageTest"/>
+      <class name="com.fpm.qa.TestCases.SignUpTest"/>
+      <class name="com.fpm.qa.TestCases.ProfilePageTest"/>
+      <class name="com.fpm.qa.TestCases.HomePageTest"/>
+    </classes>
+  </test> <!-- TestNG -->
+</suite> <!-- Suite -->

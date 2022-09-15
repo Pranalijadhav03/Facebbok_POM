@@ -1,6 +1,6 @@
 package com.fpm.qa.TestCases;
-
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -10,7 +10,8 @@ import com.fpm.qa.pages.HomePage;
 import com.fpm.qa.pages.LoginPage;
 import com.fpm.qa.util.TestUtil;
 
-public class HomePageTest extends TestBase {
+@Listeners(com.fpm.qa.Extentreportlistener.TestNG_Listener.class)
+public class HomePageTest extends HomePage{
 
 	LoginPage loginPage;
 	HomePage homePage;
@@ -33,7 +34,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 1)
 	public void loginPageTitleTest() {
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Facebook – log in or sign up");
+		Assert.assertEquals(title, "Facebook");
 	}
 
 	@Test(priority = 2)

@@ -5,9 +5,10 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
+@Listeners(com.fpm.qa.Extentreportlistener.TestNG_Listener.class)
 public class SettingPageTestCase extends SettingPage {
     public SettingPageTestCase(){
         super();

@@ -4,10 +4,12 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fpm.qa.pages.MenuPage;
 
+@Listeners(com.fpm.qa.Extentreportlistener.TestNG_Listener.class)
 public class MenuPageTestCase extends MenuPage {
 
     public MenuPageTestCase(){

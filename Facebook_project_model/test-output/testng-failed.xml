@@ -3,22 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.fpm.qa.TestCases.ProfilePageTest">
+      <class name="com.fpm.qa.TestCases.HomePageTest">
         <methods>
-          <include name="verifyMoreFieldForProfilePage"/>
-          <include name="verifyEditDetailsFieldOfProfilePage"/>
-          <include name="verifyCheck_InFieldOfPage"/>
-          <include name="setUp"/>
-          <include name="verifyPhotosFieldOfPage"/>
-          <include name="verifyAboutFieldLogoInProfilePage"/>
-          <include name="verifyFriendsFieldOfProfilePage"/>
-          <include name="verifyAddBioFieldOfPage"/>
-          <include name="verifyAddHobbiesFieldOfHomePage"/>
-          <include name="closeBrowsers"/>
-          <include name="verifyPostsFieldForProfilePage"/>
-          <include name="verifyvideosFieldOfPage"/>
+          <include name="setUpHomePage"/>
+          <include name="fpmNotificationsTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.fpm.qa.TestCases.ProfilePageTest -->
+      </class> <!-- com.fpm.qa.TestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

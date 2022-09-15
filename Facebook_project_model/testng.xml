@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="TestNG">
+<listeners>
+        <listener class-name="com.fpm.qa.Extentreportlistener.ExtentReportNG" />
+    </listeners>
+    
+  <test thread-count="5" name="Test">
     <classes>
       <class name="com.fpm.qa.TestCases.LoginPageTest"/>
-      <class name="com.fpm.qa.TestCases.SignUpTest"/>
-      <class name="com.fpm.qa.TestCases.ProfilePageTest"/>
-      <class name="com.fpm.qa.TestCases.MenuPageTestCase"/>
-      <class name="com.fpm.qa.TestCases.HomePageTest"/>
-      <class name="com.fpm.qa.TestCases.SettingPageTestCase"/>
+     <!--  <class name="com.fpm.qa.TestCases.SignUpTest"/>  -->
+    <!--   <class name="com.fpm.qa.TestCases.ProfilePageTest"/>  -->
+    <!--  <class name="com.fpm.qa.TestCases.MenuPageTestCase"/> -->
+    <!--   <class name="com.fpm.qa.TestCases.HomePageTest"/>  -->
+     <!--  <class name="com.fpm.qa.TestCases.SettingPageTestCase"/>  -->
     </classes>
-  </test> <!-- TestNG -->
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

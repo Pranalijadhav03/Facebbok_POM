@@ -24,7 +24,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "(//div[@aria-label='Messenger'])[1] ")
 	WebElement messenger;
 
-	@FindBy(xpath = "//a[@aria-label='Notifications, 1 unread']")
+	@FindBy(xpath = "//a[@aria-label='Notifications, 3 unread']")
 	WebElement Notifications;
 	
 	@FindBy(xpath = "//span[contains(text(),'Find Friends')]")
